@@ -1,0 +1,28 @@
+/**
+ * @file rc_project_template.c
+ *
+ * This is meant to be a skeleton program for Robot Control projects. Change
+ * this description and file name before modifying for your own purpose.
+ */
+
+#include <stdio.h>
+#include <robotcontrol.h> // includes ALL Robot Control subsystems
+#include <rc/motor.h>
+#include <rc/time.h>
+int main(){
+    rc_motor_init();
+    for(int i=0;i<3;i++){
+    rc_motor_set (1, 0.5);
+    rc_motor_set (1, 0.0);
+	#include <stdio.h>
+#include <rc/motor.h>
+#include <rc/time.h>
+int main(){
+    rc_motor_init();
+    rc_motor_set (1, 0.5);
+    rc_usleep(1E6);
+    rc_motor_set (1, 0.0);
+    rc_motor_cleanup();
+}}
+    rc_motor_cleanup();
+}
